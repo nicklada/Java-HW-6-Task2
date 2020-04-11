@@ -6,7 +6,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BonusServiceTest {
-    @ParameterizedTest(name ="{0}")
+    @ParameterizedTest()
     @CsvFileSource(resources = "/data.csv")
 
     void shouldCalculate(String test, long amount, boolean registered, long expected) {
